@@ -32,10 +32,14 @@ background: linear-gradient(45deg, rgba(64, 60, 105, 1) 0%, rgba(247, 105, 105, 
     position: relative;
 }
 .card__image img {
-    transform: scale(1.2);
+    height: calc(100vh - 150px); /* Fill the height of the container */
+    width: 100%;  /* Fill the width of the container */
+    object-fit: contain; /* Options: cover, contain, fill, none, scale-down */
 }
+
 img{
     height: calc(100vh - 150px);
+    width: 300px;
 }
 .card__image .badge {
     position: absolute;

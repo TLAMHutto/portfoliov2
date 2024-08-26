@@ -5,7 +5,7 @@ import image1 from '../imgs/3.png';
 import image2 from '../imgs/2.png';
 import image3 from '../imgs/1.png';
 
-const Carousel = () => {
+const MobileCarousel = () => {
   const carouselRef = useRef(null);
   const imgsRef = useRef([]);
 
@@ -73,4 +73,4 @@ const Carousel = () => {
   
 };
 
-export default Carousel;
+export default MobileCarousel;
