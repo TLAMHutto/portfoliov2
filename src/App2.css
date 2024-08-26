@@ -1,0 +1,65 @@
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 80px 20px 40px 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px);
+    width: 100%; /* Ensure container takes full width */
+    outline: auto;
+  }
+  
+  
+    .carousel {
+      display: flex;
+      flex-direction: row;
+      width: calc(70vw);
+      height: calc(100vh - 20px);
+    }
+  
+    .column-container {
+      flex: 0 0 100%;
+      height: 100%;
+      display: flex; /* Center content vertically if needed */
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .column {
+      flex: 0 0 100%;
+      height: 100%;
+      scroll-snap-align: center;
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      margin-right: 20px;
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.79);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.79);
+      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.79);
+    }
+  
+    .column1 {
+      background-image: url('./imgs/1.png');
+    }
+  
+    .column2 {
+      background-image: url('./imgs/2.png');
+    }
+  
+    .column3 {
+      background-image: url('./imgs/3.png');
+    }
+  }
+  height: 90%; /* Make columns smaller vertically */
+    width: 100%;
+    scroll-snap-align: center; /* Align columns to the center when scrolling */
+    background-size: cover; /* Ensure background image covers the smaller column */
+    background-position: center; /* Center the image */
+    border-radius: 10px; /* Optional: Rounded corners */
+    margin-right: 20px; /* Add space between columns */
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.79);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.79);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.79);
+    outline: auto;
