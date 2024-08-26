@@ -23,7 +23,7 @@ const Carousel = () => {
     const handleScroll = () => {
         flkty.slides.forEach((slide, i) => {
           const img = imgsRef.current[i];
-          const x = (slide.target + flkty.x) * -1 / 3;
+          const x = (slide.target + flkty.x) * -1 / 1.2;
           img.style[transformProp] = `translateX(${x}px) scale(1.3)`;
         });
       };
@@ -42,17 +42,7 @@ const Carousel = () => {
         <div className="carousel-item">
           <div className="card">
             <div className="card__image">
-              <img src="http://unsplash.it/300/?image=58" alt="" ref={el => imgsRef.current[0] = el} />
-              <span className="badge">
-                <i className="fa fa-camera-retro"></i>
-                1
-              </span>
-            </div>
-            <div className="card__info">
-              <h2 className="card__title">
-                Project No<sup>01</sup>
-              </h2>
-              <p className="card__desc">Just another simple card user interface</p>
+              <img src={image1} alt="" ref={el => imgsRef.current[0] = el} />
             </div>
           </div>
         </div>
@@ -60,40 +50,23 @@ const Carousel = () => {
         <div className="carousel-item">
           <div className="card">
             <div className="card__image">
-              <img src="http://unsplash.it/300/?image=87" alt="" ref={el => imgsRef.current[1] = el} />
-              <span className="badge">
-                <i className="fa fa-camera-retro"></i>
-                2
-              </span>
+              <img src={image2} alt="" ref={el => imgsRef.current[1] = el} />
+
             </div>
-            <div className="card__info">
-              <h2 className="card__title">
-                Project No<sup>02</sup>
-              </h2>
-              <p className="card__desc">Just another simple card user interface</p>
-            </div>
+            
           </div>
         </div>
   
         <div className="carousel-item">
           <div className="card">
             <div className="card__image">
-              <img src="http://unsplash.it/300/?image=116" alt="" ref={el => imgsRef.current[2] = el} />
-              <span className="badge">
-                <i className="fa fa-camera-retro"></i>
-                3
-              </span>
+              <img src={image3} alt="" ref={el => imgsRef.current[2] = el} />
+
             </div>
-            <div className="card__info">
-              <h2 className="card__title">
-                Project No<sup>03</sup>
-              </h2>
-              <p className="card__desc">Just another simple card user interface</p>
-            </div>
+ 
           </div>
         </div>
   
-        
       </div>
     </div>
   );
