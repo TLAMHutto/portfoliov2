@@ -1,13 +1,4 @@
-body {
-    min-height: 100vh;
-    font-family: karla;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgb(64, 60, 105);
-background: linear-gradient(45deg, rgba(64, 60, 105, 1) 0%, rgba(247, 105, 105, 1) 100%);
 
-}
 .phone-viewport {
     width: 380px;
     height: 900px;

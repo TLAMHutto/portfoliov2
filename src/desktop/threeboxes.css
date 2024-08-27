@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  height: calc(100vh - 80px);
+  width: calc(100vw - 40px);
+  padding: 0;
+  gap: 50px;
+}
+.column {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  border-radius: 8px;
+  -webkit-box-shadow: 21px 21px 41px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 21px 21px 41px -1px rgba(0,0,0,0.75);
+  box-shadow: 21px 21px 41px -1px rgba(0,0,0,0.75);
+}
+.column1 {
+  background-image: url('../imgs/1.png');
+}
+.column2 {
+  background-image: url('../imgs/2.png');
+}
+.column3 {
+  background-image: url('../imgs/3.png');
+}
+
