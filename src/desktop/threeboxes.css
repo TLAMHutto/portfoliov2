@@ -1,5 +1,6 @@
 .container {
   display: flex;
+  justify-content: space-between;
   height: calc(100vh - 80px);
   width: calc(100vw - 40px);
   padding: 0;
@@ -8,14 +9,24 @@
 }
 .column {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  position: relative;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   height: 100%;
   border-radius: 8px;
   -webkit-box-shadow: 21px 21px 41px -1px rgba(0,0,0,0.75);
   -moz-box-shadow: 21px 21px 41px -1px rgba(0,0,0,0.75);
   box-shadow: 21px 21px 41px -1px rgba(0,0,0,0.75);
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.5s;
+}
+.logo{
+  max-width: 100%;
+  height: auto;
 }
 .column1 {
   background-image: url('../imgs/1.png');
@@ -29,6 +40,4 @@
 .column:hover{
   scale: 1.05;
   opacity: 0.7;
-  backdrop-filter: blur(50px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
 }
