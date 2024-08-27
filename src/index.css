@@ -12,9 +12,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Montserrat', sans-serif;
-  background-image: url('./imgs/background.png');
+  background: linear-gradient(360deg, hsla(248, 25%, 37%, 1) 0%, hsla(10, 99%, 66%, 1) 100%);
 }
+
 
 #root {
   width: 100vw;

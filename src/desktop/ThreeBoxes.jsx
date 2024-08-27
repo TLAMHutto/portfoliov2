@@ -1,6 +1,8 @@
-import "./threeboxes.css";
+import React, { useEffect } from 'react';
+import './ThreeBoxes.css'; // Assuming you have some CSS for styling
 
 function ThreeBoxes() {
+
   return (
     <div className="container">
       <div className="column column1"></div>

@@ -24,9 +24,9 @@ const phases = new Float32Array(particlesCount);
 const blinkSpeeds = new Float32Array(particlesCount); // New array for individual blink speeds
 
 for (let i = 0; i < particlesCount; i++) {
-  positions[i * 3] = (Math.random() - 0.5) * 10;
-  positions[i * 3 + 1] = (Math.random() - 0.5) * 25;
-  positions[i * 3 + 2] = (Math.random() - 0.5) * 10;
+  positions[i * 3] = (Math.random() - 0.5) * 30;
+  positions[i * 3 + 1] = (Math.random() - 0.5) * 35;
+  positions[i * 3 + 2] = (Math.random() - 0.5) * 30;
   
   phases[i] = Math.random() * Math.PI * 2;
   blinkSpeeds[i] = Math.random() * 2 + 0.5; // Random speed between 0.5 and 2.5
