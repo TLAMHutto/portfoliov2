@@ -1,10 +1,11 @@
-import Carousel from './carousel/MobileCarousel'
+import { useState, useEffect } from 'react';
 import './index.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./carousel/mobileCarousel.css"
+import Carousel from './carousel/MobileCarousel'
 import ThreeBoxes from './desktop/ThreeBoxes';
-import { useState, useEffect } from 'react';
+import { ParticleJS } from './three/main'; 
 
 const App = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -18,7 +19,18 @@ const App = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  return isMobile ? <Carousel /> : <ThreeBoxes />;
+  return (
+    // <div style={{ position: 'relative', width: '100vw', height: '100vh' }}>
+    //   {!isMobile && <ParticleScene />} {/* Render BackgroundCanvas only on desktop */}
+    //   <div style={{ position: 'relative', zIndex: 1 }}>
+    //     {isMobile ? <Carousel /> : <ThreeBoxes />}
+    //   </div>
+    // </div>
+    <div>
+          < ThreeBoxes />
+    </div>
+
+  );
 };
 
 export default App;

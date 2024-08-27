@@ -1,0 +1,15 @@
+/* style.css */
+canvas {
+  display: block; /* Prevent canvas from adding extra space */
+  /* background-image: url('background.png'); */
+  background-size: cover; /* Ensures the background image covers the entire element */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents repeating the background image */
+  background-attachment: fixed; /* Keeps the background image fixed in place */
+  position: absolute; /* Ensure canvas is positioned absolutely */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0; /* Canvas is behind React content */
+}
