@@ -3,6 +3,7 @@ import './index.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./carousel/mobileCarousel.css"
+import './scrollbar.css'
 import Carousel from './carousel/MobileCarousel'
 import ThreeBoxes from './desktop/ThreeBoxes';
 import { ParticleJS } from './three/main'; 

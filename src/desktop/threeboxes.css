@@ -104,6 +104,7 @@
 .aboutMe {
   font-family: 'DM Serif Text', serif; /* Apply the imported font */
   width: 30%;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 .column3 {
   background-image: url('../imgs/3.png');
@@ -121,17 +122,25 @@
   overflow-x: hidden;
 }
 .education-experience-container {
-  width: 80%; /* Adjust width as needed */
+  width: 100%; /* Adjust width as needed */
   height: auto;
   margin-bottom: 20px; /* Space between sections */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the content */
+  align-items: center; /* Horizontally centers the content */
+  text-align: center; /* Ensure text inside is centered horizontally */
 }
 
 .section-title {
   font-family: 'Bodoni Moda SC';
   font-size: 1.5em; /* Adjust size as needed */
-  margin-bottom: 10px;
-  text-align: left;
+  margin: 0; /* Remove default margin for better centering */
+  color: bisque !important;
+  width: auto;
+
 }
+
 
 .section-content {
   font-family: 'DM Serif Text', serif;
@@ -143,7 +152,21 @@
   overflow: hidden; /* Prevents content from overflowing */
   word-wrap: break-word; /* Breaks long words */
   text-overflow: ellipsis; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the content */
+  align-items: center; /* Horizontally centers the content */
+  text-align: left; /* Ensure text inside is centered horizontally */
+}
+.edu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the content */
+  align-items: center; /* Horizontally centers the content */
+  text-align: center; /* Ensure text inside is centered horizontally */
+  width: 100%;
 }
 h4{
   text-transform: uppercase;
+  text-decoration: underline;
 }

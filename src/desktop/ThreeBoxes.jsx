@@ -2,12 +2,20 @@ import React, { useEffect } from 'react';
 import './ThreeBoxes.css';
 import gold from '../imgs/gold.png'
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+
+import MediaCard from './Cards';
+
 function ThreeBoxes() {
   return (
     <div className="container">
-      <div className="column column1"></div>
+      <div className="column column1">
+        <div className='cards-container'>
+          <h3 className='section-title'>Projects</h3>
+          <MediaCard />
+        </div>
+      </div>
       <div className="column column2">
-        <img src={ gold } className='logo'></img>
+        <img src={gold} className='logo'></img>
         <div className='aboutMe-container'>
           <p className='aboutMe'>
             I am a full stack engineer with 6+ years experience,
@@ -33,21 +41,24 @@ function ThreeBoxes() {
       <div className="column column3">
         <div className='column3-container'>
 
-        <div className="education-experience-container">
-          <h3 className="section-title">Education</h3>
-          <p className="section-content">
-            A.A.S. Instrumentation and Electrical Technician, Kilgore College<br />
-            <br />
-            B.S. Computer Science, University of Texas<br />
-            <br />
-            M.S. Computer Science, University of Colorado<br />
-            <br />
-            M.S. Electrical Engineering, University of Colorado
-            <br />
-          </p>
-        </div>
+          <div className="education-experience-container">
 
-          <div class="experience-container">
+            <div className="edu">
+              <h3 className="section-title">Education</h3>
+              <p className="section-content">
+                A.A.S. Instrumentation and Electrical Technician, Kilgore College<br />
+                <br />
+                B.S. Computer Science, University of Texas<br />
+                <br />
+                M.S. Computer Science, University of Colorado<br />
+                <br />
+                M.S. Electrical Engineering, University of Colorado
+                <br />
+              </p>
+            </div>
+
+          <div className="experience-container">
+            <h3 className='section-title'>Experience</h3>
             <h4>Parsons Corp</h4>
             <p>Software Engineer | 2022-2024</p>
             <ul>
@@ -57,7 +68,7 @@ function ThreeBoxes() {
             </ul>
           </div>
 
-          <div class="experience-container">
+          <div className="experience-container">
             <h4>Target</h4>
             <p>Front End Developer | 2020-2022</p>
             <ul>
@@ -67,7 +78,7 @@ function ThreeBoxes() {
             </ul>
           </div>
 
-          <div class="experience-container">
+          <div className="experience-container">
             <h4>Norris Cylinder</h4>
             <p>Software Engineer | 2018-2020</p>
             <ul>
@@ -77,12 +88,13 @@ function ThreeBoxes() {
             </ul>
           </div>
 
-          <div class="experience-container">
+          <div className="experience-container">
             <h4>U.S. Navy</h4>
             <p>Tomahawk Missile Technician | 2011-2017</p>
           </div>
         </div>
-        </div>
+      </div>
+    </div>
     </div>
   );
 }

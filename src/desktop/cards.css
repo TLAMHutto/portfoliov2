@@ -1,0 +1,49 @@
+.cards-container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 90%;
+    height: 90vh; /* Adjust the height of the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  
+  .card {
+    border: none;
+    width: 90%;
+    height: auto; /* Allow the card height to adjust based on content */
+    box-shadow: 10px 10px 39px -7px rgba(0,0,0,0.75);
+    color: aliceblue;
+    margin: 10px 0;
+    background-color: rgba(68, 68, 68, 0.596);
+    backdrop-filter: blur(10px);
+    flex-shrink: 0; /* Prevent shrinking */
+    padding: 10px; /* Add padding inside the card */
+    box-sizing: border-box; /* Include padding in width and height */
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto; /* Allow image height to adjust */
+  }
+  
+  .card-title {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    text-align: center;
+  }
+  
+  .card-description {
+    font-size: 1em;
+    margin: 0 1em 1em;
+    border-top: 1px solid white;
+    height: auto; /* Allow the description height to adjust */
+    overflow-wrap: break-word; /* Ensure long words break onto the next line */
+    word-wrap: break-word; /* Older compatibility */
+    word-break: break-word;
+  }
+  
