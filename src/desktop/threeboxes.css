@@ -105,3 +105,45 @@
   font-family: 'DM Serif Text', serif; /* Apply the imported font */
   width: 30%;
 }
+.column3 {
+  background-image: url('../imgs/3.png');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  word-wrap: break-word; /* Break long words to prevent overflow */
+  text-overflow: ellipsis;
+}
+.column3-container{
+  color: white;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.education-experience-container {
+  width: 80%; /* Adjust width as needed */
+  height: auto;
+  margin-bottom: 20px; /* Space between sections */
+}
+
+.section-title {
+  font-family: 'Bodoni Moda SC';
+  font-size: 1.5em; /* Adjust size as needed */
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.section-content {
+  font-family: 'DM Serif Text', serif;
+  font-size: 1em; /* Adjust size as needed */
+  line-height: 1.5;
+  text-align: left;
+}
+.experience-container{
+  overflow: hidden; /* Prevents content from overflowing */
+  word-wrap: break-word; /* Breaks long words */
+  text-overflow: ellipsis; 
+}
+h4{
+  text-transform: uppercase;
+}
