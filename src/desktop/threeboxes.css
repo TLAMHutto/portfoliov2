@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=DM+Serif+Text:ital@0;1&display=swap');
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -44,7 +47,8 @@
 }
 .column:hover{
   scale: 1.05;
-  opacity: 0.7;
+  transform: translateY(2em);
+
 }
 .icon-row {
   display: flex;
@@ -65,4 +69,39 @@
 .icon-row a:hover {
   color: #ebbd6f;
   scale: 1.2;
+}
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-text-regular-italic {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.aboutMe-container{
+
+  font-size: 16px; /* Adjust as needed */
+  line-height: 1.5; /* Improve readability */
+  text-align: center; /* Center text, optional */
+  margin: 20px 0; /* Space around the paragraph */
+  color: white;
+  display: flex;
+  justify-content: center; /* Horizontally center child elements */
+  align-items: center; /* Vertically center child elements if needed */
+  flex-direction: column;
+
+}
+.name{
+  font-size: 2em;
+  font-family: 'Bodoni Moda SC';
+  width: 100%; /* Ensures it spans the full width of the container */
+  text-align: left; /* Align text to the left */
+  margin-bottom: 10px; /* Optional: add space below the name */
+}
+.aboutMe {
+  font-family: 'DM Serif Text', serif; /* Apply the imported font */
+  width: 30%;
 }
