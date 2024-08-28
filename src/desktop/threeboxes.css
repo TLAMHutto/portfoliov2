@@ -12,6 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  
   padding: 10px;
   position: relative;
   background-size: cover;
@@ -33,6 +34,10 @@
 }
 .column2 {
   background-image: url('../imgs/2.png');
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Center items horizontally */
 }
 .column3 {
   background-image: url('../imgs/3.png');
@@ -40,4 +45,24 @@
 .column:hover{
   scale: 1.05;
   opacity: 0.7;
+}
+.icon-row {
+  display: flex;
+  justify-content: space-between; /* Space icons evenly */
+  align-items: center; /* Align icons vertically in the center */
+  width: 100%; /* Full width of the column */
+}
+
+.icon-row a {
+  font-size: 24px; /* Adjust icon size */
+  color: #ffffff; /* Default icon color */
+  text-decoration: none;
+  flex: 1; /* Allows icons to stretch evenly */
+  display: flex;
+  justify-content: center; /* Centers icons horizontally within each flex item */
+}
+
+.icon-row a:hover {
+  color: #ebbd6f;
+  scale: 1.2;
 }
