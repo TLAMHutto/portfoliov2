@@ -27,13 +27,13 @@ function ThreeBoxes() {
           </p>
         </div>
         <div className="icon-row">
-          <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/TLAMHutto" target="_blank" rel="noopener noreferrer">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/keaton-hutto8/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
           </a>
-          <a href="mailto:your.email@example.com">
+          <a href="mailto:keatonhutto8@gmail.com">
             <FaEnvelope />
           </a>
         </div>

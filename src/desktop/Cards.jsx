@@ -8,11 +8,11 @@ import rpb from '../imgs/rbp.png'
 const Cards = ({ imageSrc, title, description }) => {
   return (
     <>
-    <div className="card">
+    <div className="card"><a href='https://jobtrackerapp-f57ac91e06c6.herokuapp.com/landing'target='_blank' >
       <img src={jobifyImg} alt={title} className="card-image" />
-      <h2 className="card-title"><a href='https://jobtrackerapp-f57ac91e06c6.herokuapp.com/landing'>Jobify</a></h2>
+      <h2 className="card-title">Jobify</h2>
       <p className="card-description">A full stack job MERN job tracking app that allows users to sign up and add, store, and track job applications and interviews. Desktop version allows same functionalities with added perks such as job scrapping, resume building and local storage. Frontend built with React. Backend built with Express and MongoDB. Deployed on Heroku Desktop version built with React, Electron.js, mySQL and Python</p>
-    </div>
+      </a> </div>
 
     <div className="card">
     <img src={mymoniter} alt={title} className="card-image" />

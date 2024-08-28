@@ -45,11 +45,12 @@
 .column3 {
   background-image: url('../imgs/3.png');
 }
-.column:hover{
+.column1:hover,
+.column3:hover {
   scale: 1.05;
   transform: translateY(2em);
-
 }
+
 .icon-row {
   display: flex;
   justify-content: space-between; /* Space icons evenly */
@@ -105,6 +106,8 @@
   font-family: 'DM Serif Text', serif; /* Apply the imported font */
   width: 30%;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  background-color: rgba(218,104,114, 0.301) !important;
+  backdrop-filter: blur(10px);
 }
 .column3 {
   background-image: url('../imgs/3.png');
@@ -147,7 +150,12 @@
   font-size: 1em; /* Adjust size as needed */
   line-height: 1.5;
   text-align: left;
+  width: 90%;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.66);
+  background-color: rgba(255, 174, 130, 0.137) !important;
+  backdrop-filter: blur(10px);
 }
+
 .experience-container{
   overflow: hidden; /* Prevents content from overflowing */
   word-wrap: break-word; /* Breaks long words */
@@ -157,6 +165,11 @@
   justify-content: center; /* Vertically centers the content */
   align-items: center; /* Horizontally centers the content */
   text-align: left; /* Ensure text inside is centered horizontally */
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.66);
+  background-color: rgba(255, 174, 130, 0.137) !important;
+  backdrop-filter: blur(10px);
+  width: 90%;
+  margin: 10px;
 }
 .edu{
   display: flex;
@@ -165,8 +178,8 @@
   align-items: center; /* Horizontally centers the content */
   text-align: center; /* Ensure text inside is centered horizontally */
   width: 100%;
+  
 }
 h4{
   text-transform: uppercase;
-  text-decoration: underline;
 }

@@ -16,10 +16,10 @@
     border: none;
     width: 90%;
     height: auto; /* Allow the card height to adjust based on content */
-    box-shadow: 10px 10px 39px -7px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 39px -7px rgba(107,91,133.75);
     color: aliceblue;
     margin: 10px 0;
-    background-color: rgba(68, 68, 68, 0.596);
+    background-color: rgba(19, 2, 37, 0.596);
     backdrop-filter: blur(10px);
     flex-shrink: 0; /* Prevent shrinking */
     padding: 10px; /* Add padding inside the card */
@@ -46,4 +46,7 @@
     word-wrap: break-word; /* Older compatibility */
     word-break: break-word;
   }
-  
+a{
+    text-decoration: none;
+    color: aliceblue;
+}  
