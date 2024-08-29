@@ -1,0 +1,42 @@
+@media(max-width: 600px){
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center; /* Center text horizontally */
+        padding: 20px; /* Adjust padding as needed */
+        border: 1px solid #ddd; /* Optional: Add a border for styling */
+        border-radius: 10px; /* Optional: Add rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+        max-width: 400px; /* Optional: Set a maximum width */
+        margin: auto; /* Center card horizontally within its container */
+      }
+      
+      .logo img {
+        width: 100px; /* Adjust the logo size as needed */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px; /* Space between logo and text */
+        scale: 1.5;
+      }
+      
+      .about-me {
+        margin-bottom: 20px; /* Space between about me text and icons */
+        width: 50%;
+        text-align: center;
+      }
+      
+      .icons a {
+        margin: 0 30px; /* Space between icons */
+        scale: 1.2;
+      }
+      .icons{
+        scale: 1.5;
+
+      }
+      .links{
+        text-decoration: underline;
+      }
+      
+}
