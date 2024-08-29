@@ -22,13 +22,13 @@ const App = () => {
 
   return (
     // <div style={{ position: 'relative', width: '100vw', height: '100vh' }}>
-    //   {!isMobile && <ParticleScene />} {/* Render BackgroundCanvas only on desktop */}
+    //   {!isMobile && <ParticleJS />} {/* Render BackgroundCanvas only on desktop */}
     //   <div style={{ position: 'relative', zIndex: 1 }}>
     //     {isMobile ? <Carousel /> : <ThreeBoxes />}
     //   </div>
     // </div>
     <div>
-          < ThreeBoxes />
+          < Carousel />
     </div>
 
   );

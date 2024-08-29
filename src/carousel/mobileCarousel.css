@@ -1,62 +1,84 @@
+@import 'flickity/css/flickity.css';
 
-.phone-viewport {
-    width: 380px;
-    height: 900px;
-}
-.carousel-item {
-    padding: 30px 10px;
-    float: left;
-
-}
-.card {
-    border-radius: 10px;
-    overflow: hidden;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    width: 300px;
-    height: calc(100vh - 150px);
-    border-left: 1px solid #000; /* Adjust thickness and color */
-    border-top: 1px solid #000;
-}
-.card__image {
-    position: relative;
-}
-.card__image img {
-    height: calc(100vh - 150px); /* Fill the height of the container */
-    width: 100%;  /* Fill the width of the container */
-    object-fit: contain; /* Options: cover, contain, fill, none, scale-down */
-}
-
-img{
-    height: calc(100vh - 150px);
-    width: 300px;
-}
-.card__image .badge {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 32px;
-}
-.card__info {
-    padding: 30px 30px 50px;
-}
-.card__title {
-    font-weight: 400;
-    margin-top: 0;
-    line-height: 1;
-}
-.card__desc {
-    opacity: 0.5;
+@media(max-width: 600px){
+    .phone-viewport {
+        width: 100%;
+        height: 100%;
+        margin: 1em;
+    }
+    .carousel-item {
+    
+    
+    }
+    .card {
+        border-radius: 10px;
+        overflow: hidden;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        width: 300px;
+        height: calc(100vh - 150px);
+        border-left: 1px solid #000; /* Adjust thickness and color */
+        border-top: 1px solid #000;
+    }
+    .card__image {
+        position: relative;
+    }
+    .card__image img {
+        height: calc(100vh - 150px); /* Fill the height of the container */
+        width: 100%;  /* Fill the width of the container */
+        object-fit: contain; /* Options: cover, contain, fill, none, scale-down */
+    }
+    
+    img{
+        height: calc(100vh - 150px);
+        width: 300px;
+    }
+    .card__image .badge {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+    }
+    .card__info {
+        padding: 30px 30px 50px;
+    }
+    .card__title {
+        font-weight: 400;
+        margin-top: 0;
+        line-height: 1;
+    }
+    .card__desc {
+        opacity: 0.5;
+    }
+    button.flickity-button.flickity-prev-next-button.previous{
+        display: none;
+    }
+    button.flickity-button.flickity-prev-next-button.next{
+        display: none;
+    }
+    .flickity-page-dot {
+        width: 12px;
+        height: 12px;
+        opacity: 1;
+        background: transparent !important;
+        border: 2px solid rgb(255, 102, 0) !important;
+      }
+      
+      .flickity-page-dot.is-selected {
+        background: white !important;
+      }
+      
+      
 }
