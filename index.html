@@ -6,11 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Keaton Hutto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+      /* Hide page content initially */
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      #root {
+        display: none;
+      }
+
+      /* Loader styling */
+      .loader {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+        background: linear-gradient(360deg, hsla(248, 25%, 37%, 1) 0%, hsla(10, 99%, 66%, 1) 100%);
+        padding: 20px;
+        border-radius: 5px;
+      }
+      .spinner {
+        border: 4px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        border-top: 4px solid #000;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
   </head>
   <body>
+    <div class="loader">
+      <div class="spinner"></div>
+    </div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const loader = document.querySelector('.loader');
+        const root = document.getElementById('root');
+        
+        // Show the loader immediately
+        loader.style.display = 'block';
+        
+        // Delay hiding the loader and show the page content
+        const delay = 3000; // 5 seconds
+        setTimeout(() => {
+          loader.style.display = 'none';
+          root.style.display = 'block'; // Show the page content
+          document.body.style.overflow = 'auto'; // Allow scrolling if needed
+        }, delay);
+      });
+    </script>
   </body>
 </html>
