@@ -2,9 +2,10 @@ import React from 'react';
 import './cards.css'; // Make sure to create this CSS file for styling
 import jobifyImg from '../imgs/jobify.png'
 import mymoniter  from '../imgs/pymoniter.png'
-import uib from '../imgs/uib.png'
 import arduino from '../imgs/arduino.png'
 import rpb from '../imgs/rbp.png'
+import ollamaChat from '../imgs/python.png'
+import ocr from '../imgs/ocr.png'
 const Cards = ({ imageSrc, title, description }) => {
   return (
     <>
@@ -21,9 +22,17 @@ const Cards = ({ imageSrc, title, description }) => {
     </div>
 
     <div className="card">
-    <img src={uib} alt={title} className="card-image" />
-    <h2 className="card-title">UI Builder</h2>
-    <p className="card-description">A python CLI tool to view PC system stats. Includes OS running processes, CPU monitoring - Temp, Clocking, Load. GPU monitoring - Temp, Load. Disk drives In/Out, Fan speeds, LAN up/down speeds</p>
+    <img src={ollamaChat} alt={title} className="card-image" />
+    <h2 className="card-title">Ollama Chat</h2>
+    <p className="card-description">This repository hosts two main applications that allow users to interact with Ollama models for chatting, and provides integrations with MongoDB for storing data. The two applications are built with Electron/React and Python</p>
+    </div>
+
+    <div className="card">
+    <img src={ocr} alt={title} className="card-image" />
+    <h2 className="card-title">OCR Stream</h2>
+    <p className="card-description">This project provides a simple Python-based application for streaming video from one computer to another over a Local Area Network (LAN). In addition to streaming, it includes a draggable screenshot tool that allows users to capture images from the client's screen, with the ability to convert these images to text using Optical Character Recognition (OCR).
+
+</p>
     </div>
 
     <div className="card">
